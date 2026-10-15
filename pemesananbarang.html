@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan Barang</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Form Pemesanan Barang</legend>
+
+            <!-- Menu navigasi -->
+            <nav>
+                <a href="#">Home</a> |
+                <a href="#">Generate Link</a> |
+                <a href="#">Transaction History</a> |
+                <a href="#">Policy</a> |
+                <a href="#">Logout</a>
+            </nav>
+
+            <br>
+
+            <table>
+                <tr>
+                    <!-- Foto barang -->
+                    <td valign="top">
+                        <img
+                            src= "img1.jpeg"
+                            alt="Foto Barang"
+                            width="150"
+                            height="150"
+                        >
+                        <br>
+                        <input type="file" name="foto">
+                    </td>
+
+                    <!-- Informasi barang -->
+                    <td valign="top">
+                        <label for="title">Title Here</label>
+                    </td>
+                    <td valign="top">
+                        <input
+                            type="text"
+                            id="title"
+                            name="title"
+                            value="MacBook Air E800"
+                            size="35"
+                        >
+                        <br>
+
+                        <label for="description">Description</label>
+                        <br>
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="4"
+                            cols="35"
+                        >Year: 2009
+Model: 
+Condition: Mint</textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="account">Account Number</label>
+                    </td>
+                    <td>
+                        <input
+                            type="text"
+                            id="account"
+                            name="account"
+                            value="123-456-789-0"
+                            size="35"
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="bank">Bank</label>
+                    </td>
+                    <td>
+                        <select id="bank" name="bank">
+                            <option value="HSBC">HSBC</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BRI">BRI</option>
+                            <option value="BNI">BNI</option>
+                            <option value="Mandiri">Mandiri</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="account_name">Account Holder</label>
+                    </td>
+                    <td>
+                        <input
+                            type="text"
+                            id="account_name"
+                            name="account_name"
+                            value="Name Here"
+                            size="25"
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td valign="top">
+                        <label for="transaction">Transaction</label>
+                    </td>
+                    <td>
+                        <select
+                            id="transaction"
+                            name="transaction"
+                            multiple
+                            size="2"
+                        >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+
+                        <br>
+                        <small>
+                            * If the transaction is for 3 persons,
+                            choose 3 from the drop-down list.
+                        </small>
+
+                        <br><br>
+
+                        <input
+                            type="checkbox"
+                            id="mobile_check"
+                            name="notification[]"
+                            value="mobile"
+                            checked
+                        >
+                        <label for="mobile_check">
+                            Send to Mobile Phone
+                        </label>
+
+                        <br>
+
+                        <input
+                            type="checkbox"
+                            id="email_check"
+                            name="notification[]"
+                            value="email"
+                            checked
+                        >
+                        <label for="email_check">
+                            Send to Email
+                        </label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="mobile">Send to Mobile Phone</label>
+                    </td>
+                    <td>
+                        <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            value="081234567890"
+                            size="35"
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <label for="email">Send to Email</label>
+                    </td>
+                    <td>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value="nisa@example.com"
+                            size="35"
+                        >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" align="center">
+                        <br>
+                        <button type="submit">
+                            Generate Nabr Link
+                        </button>
+                    </td>
+                </tr>
+            </table>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
+</html>
